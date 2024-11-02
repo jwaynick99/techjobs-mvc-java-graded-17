@@ -15,9 +15,6 @@ import java.util.ArrayList;
 import static org.launchcode.techjobsmvc.controllers.ListController.columnChoices;
 
 
-/**
- * Created by LaunchCode
- */
 @Controller
 @RequestMapping("search")
 public class SearchController {
@@ -28,7 +25,6 @@ public class SearchController {
         return "search";
     }
 
-    // TODO #3 - Create a handler to process a search request and render the updated search view.
     @PostMapping("results")
     public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam String searchTerm){
         ArrayList<Job> jobs;
